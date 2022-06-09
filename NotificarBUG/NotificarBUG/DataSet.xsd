@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet" targetNamespace="http://tempuri.org/DataSet.xsd" xmlns:mstns="http://tempuri.org/DataSet.xsd" xmlns="http://tempuri.org/DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet" msprop:Generator_UserDSName="DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Solicitacoes" msprop:Generator_TableClassName="SolicitacoesDataTable" msprop:Generator_TableVarName="tableSolicitacoes" msprop:Generator_TablePropName="Solicitacoes" msprop:Generator_RowDeletingName="SolicitacoesRowDeleting" msprop:Generator_RowChangingName="SolicitacoesRowChanging" msprop:Generator_RowEvHandlerName="SolicitacoesRowChangeEventHandler" msprop:Generator_RowDeletedName="SolicitacoesRowDeleted" msprop:Generator_UserTableName="Solicitacoes" msprop:Generator_RowChangedName="SolicitacoesRowChanged" msprop:Generator_RowEvArgName="SolicitacoesRowChangeEvent" msprop:Generator_RowClassName="SolicitacoesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Série" msprop:Generator_ColumnVarNameInTable="columnSérie" msprop:Generator_ColumnPropNameInRow="Série" msprop:Generator_ColumnPropNameInTable="SérieColumn" msprop:Generator_UserColumnName="Série" type="xs:string" minOccurs="0" />
+              <xs:element name="Número" msprop:Generator_ColumnVarNameInTable="columnNúmero" msprop:Generator_ColumnPropNameInRow="Número" msprop:Generator_ColumnPropNameInTable="NúmeroColumn" msprop:Generator_UserColumnName="Número" type="xs:int" minOccurs="0" />
+              <xs:element name="Solicitação" msprop:Generator_ColumnVarNameInTable="columnSolicitação" msprop:Generator_ColumnPropNameInRow="Solicitação" msprop:Generator_ColumnPropNameInTable="SolicitaçãoColumn" msprop:Generator_UserColumnName="Solicitação" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

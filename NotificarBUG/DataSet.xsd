@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet" targetNamespace="http://tempuri.org/DataSet.xsd" xmlns:mstns="http://tempuri.org/DataSet.xsd" xmlns="http://tempuri.org/DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GRConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="GRConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.NotificarBUG.Properties.Settings.GlobalReference.Default.GRConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet" msprop:Generator_UserDSName="DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Solicitacoes" msprop:Generator_TableClassName="SolicitacoesDataTable" msprop:Generator_TableVarName="tableSolicitacoes" msprop:Generator_RowChangedName="SolicitacoesRowChanged" msprop:Generator_TablePropName="Solicitacoes" msprop:Generator_RowDeletingName="SolicitacoesRowDeleting" msprop:Generator_RowChangingName="SolicitacoesRowChanging" msprop:Generator_RowEvHandlerName="SolicitacoesRowChangeEventHandler" msprop:Generator_RowDeletedName="SolicitacoesRowDeleted" msprop:Generator_RowClassName="SolicitacoesRow" msprop:Generator_UserTableName="Solicitacoes" msprop:Generator_RowEvArgName="SolicitacoesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Série" msprop:Generator_ColumnVarNameInTable="columnSérie" msprop:Generator_ColumnPropNameInRow="Série" msprop:Generator_ColumnPropNameInTable="SérieColumn" msprop:Generator_UserColumnName="Série" type="xs:string" minOccurs="0" />
+              <xs:element name="Número" msprop:Generator_ColumnVarNameInTable="columnNúmero" msprop:Generator_ColumnPropNameInRow="Número" msprop:Generator_ColumnPropNameInTable="NúmeroColumn" msprop:Generator_UserColumnName="Número" type="xs:int" minOccurs="0" />
+              <xs:element name="Solicitação" msprop:Generator_ColumnVarNameInTable="columnSolicitação" msprop:Generator_ColumnPropNameInRow="Solicitação" msprop:Generator_ColumnPropNameInTable="SolicitaçãoColumn" msprop:Generator_UserColumnName="Solicitação" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VisaoDados" msprop:Generator_TableClassName="VisaoDadosDataTable" msprop:Generator_TableVarName="tableVisaoDados" msprop:Generator_TablePropName="VisaoDados" msprop:Generator_RowDeletingName="VisaoDadosRowDeleting" msprop:Generator_RowChangingName="VisaoDadosRowChanging" msprop:Generator_RowEvHandlerName="VisaoDadosRowChangeEventHandler" msprop:Generator_RowDeletedName="VisaoDadosRowDeleted" msprop:Generator_UserTableName="VisaoDados" msprop:Generator_RowChangedName="VisaoDadosRowChanged" msprop:Generator_RowEvArgName="VisaoDadosRowChangeEvent" msprop:Generator_RowClassName="VisaoDadosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Roteiro" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnRoteiro" msprop:Generator_ColumnPropNameInRow="Roteiro" msprop:Generator_ColumnPropNameInTable="RoteiroColumn" msprop:Generator_UserColumnName="Roteiro" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Versão" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnVersão" msprop:Generator_ColumnPropNameInRow="Versão" msprop:Generator_ColumnPropNameInTable="VersãoColumn" msprop:Generator_UserColumnName="Versão" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Número" msprop:Generator_ColumnVarNameInTable="columnNúmero" msprop:Generator_ColumnPropNameInRow="Número" msprop:Generator_ColumnPropNameInTable="NúmeroColumn" msprop:Generator_UserColumnName="Número" type="xs:int" />
+              <xs:element name="Solicitação" msprop:Generator_ColumnVarNameInTable="columnSolicitação" msprop:Generator_ColumnPropNameInRow="Solicitação" msprop:Generator_ColumnPropNameInTable="SolicitaçãoColumn" msprop:Generator_UserColumnName="Solicitação" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Etapa" msprop:Generator_ColumnVarNameInTable="columnEtapa" msprop:Generator_ColumnPropNameInRow="Etapa" msprop:Generator_ColumnPropNameInTable="EtapaColumn" msprop:Generator_UserColumnName="Etapa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Responsável" msprop:Generator_ColumnVarNameInTable="columnResponsável" msprop:Generator_ColumnPropNameInRow="Responsável" msprop:Generator_ColumnPropNameInTable="ResponsávelColumn" msprop:Generator_UserColumnName="Responsável" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QuemAbriu" msprop:Generator_ColumnVarNameInTable="columnQuemAbriu" msprop:Generator_ColumnPropNameInRow="QuemAbriu" msprop:Generator_ColumnPropNameInTable="QuemAbriuColumn" msprop:Generator_UserColumnName="QuemAbriu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TempoMinutos" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTempoMinutos" msprop:Generator_ColumnPropNameInRow="TempoMinutos" msprop:Generator_ColumnPropNameInTable="TempoMinutosColumn" msprop:Generator_UserColumnName="TempoMinutos" type="xs:int" minOccurs="0" />
+              <xs:element name="Horas" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnHoras" msprop:Generator_ColumnPropNameInRow="Horas" msprop:Generator_ColumnPropNameInTable="HorasColumn" msprop:Generator_UserColumnName="Horas" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Urgência" msprop:Generator_ColumnVarNameInTable="columnUrgência" msprop:Generator_ColumnPropNameInRow="Urgência" msprop:Generator_ColumnPropNameInTable="UrgênciaColumn" msprop:Generator_UserColumnName="Urgência" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VisaoDadosSolicitacao" msprop:Generator_TableClassName="VisaoDadosSolicitacaoDataTable" msprop:Generator_TableVarName="tableVisaoDadosSolicitacao" msprop:Generator_RowChangedName="VisaoDadosSolicitacaoRowChanged" msprop:Generator_TablePropName="VisaoDadosSolicitacao" msprop:Generator_RowDeletingName="VisaoDadosSolicitacaoRowDeleting" msprop:Generator_RowChangingName="VisaoDadosSolicitacaoRowChanging" msprop:Generator_RowEvHandlerName="VisaoDadosSolicitacaoRowChangeEventHandler" msprop:Generator_RowDeletedName="VisaoDadosSolicitacaoRowDeleted" msprop:Generator_RowClassName="VisaoDadosSolicitacaoRow" msprop:Generator_UserTableName="VisaoDadosSolicitacao" msprop:Generator_RowEvArgName="VisaoDadosSolicitacaoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="solicitacao" msprop:Generator_ColumnVarNameInTable="columnsolicitacao" msprop:Generator_ColumnPropNameInRow="solicitacao" msprop:Generator_ColumnPropNameInTable="solicitacaoColumn" msprop:Generator_UserColumnName="solicitacao" type="xs:string" minOccurs="0" />
+              <xs:element name="descricao" msprop:Generator_ColumnVarNameInTable="columndescricao" msprop:Generator_ColumnPropNameInRow="descricao" msprop:Generator_ColumnPropNameInTable="descricaoColumn" msprop:Generator_UserColumnName="descricao" type="xs:string" minOccurs="0" />
+              <xs:element name="versao" msprop:Generator_ColumnVarNameInTable="columnversao" msprop:Generator_ColumnPropNameInRow="versao" msprop:Generator_ColumnPropNameInTable="versaoColumn" msprop:Generator_UserColumnName="versao" type="xs:string" minOccurs="0" />
+              <xs:element name="solicitante" msprop:Generator_ColumnVarNameInTable="columnsolicitante" msprop:Generator_ColumnPropNameInRow="solicitante" msprop:Generator_ColumnPropNameInTable="solicitanteColumn" msprop:Generator_UserColumnName="solicitante" type="xs:string" minOccurs="0" />
+              <xs:element name="responsavel" msprop:Generator_ColumnVarNameInTable="columnresponsavel" msprop:Generator_ColumnPropNameInRow="responsavel" msprop:Generator_ColumnPropNameInTable="responsavelColumn" msprop:Generator_UserColumnName="responsavel" type="xs:string" minOccurs="0" />
+              <xs:element name="classe" msprop:Generator_ColumnVarNameInTable="columnclasse" msprop:Generator_ColumnPropNameInRow="classe" msprop:Generator_ColumnPropNameInTable="classeColumn" msprop:Generator_UserColumnName="classe" type="xs:string" minOccurs="0" />
+              <xs:element name="idSolicitacao" msprop:Generator_ColumnVarNameInTable="columnidSolicitacao" msprop:Generator_ColumnPropNameInRow="idSolicitacao" msprop:Generator_ColumnPropNameInTable="idSolicitacaoColumn" msprop:Generator_UserColumnName="idSolicitacao" type="xs:int" minOccurs="0" />
+              <xs:element name="statusSolicitacao" msprop:Generator_ColumnVarNameInTable="columnstatusSolicitacao" msprop:Generator_ColumnPropNameInRow="statusSolicitacao" msprop:Generator_ColumnPropNameInTable="statusSolicitacaoColumn" msprop:Generator_UserColumnName="statusSolicitacao" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VisaoDadosSolicitacaoDesenvolvedores" msprop:Generator_TableClassName="VisaoDadosSolicitacaoDesenvolvedoresDataTable" msprop:Generator_TableVarName="tableVisaoDadosSolicitacaoDesenvolvedores" msprop:Generator_RowChangedName="VisaoDadosSolicitacaoDesenvolvedoresRowChanged" msprop:Generator_TablePropName="VisaoDadosSolicitacaoDesenvolvedores" msprop:Generator_RowDeletingName="VisaoDadosSolicitacaoDesenvolvedoresRowDeleting" msprop:Generator_RowChangingName="VisaoDadosSolicitacaoDesenvolvedoresRowChanging" msprop:Generator_RowEvHandlerName="VisaoDadosSolicitacaoDesenvolvedoresRowChangeEventHandler" msprop:Generator_RowDeletedName="VisaoDadosSolicitacaoDesenvolvedoresRowDeleted" msprop:Generator_RowClassName="VisaoDadosSolicitacaoDesenvolvedoresRow" msprop:Generator_UserTableName="VisaoDadosSolicitacaoDesenvolvedores" msprop:Generator_RowEvArgName="VisaoDadosSolicitacaoDesenvolvedoresRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="solicitacao" msprop:Generator_ColumnVarNameInTable="columnsolicitacao" msprop:Generator_ColumnPropNameInRow="solicitacao" msprop:Generator_ColumnPropNameInTable="solicitacaoColumn" msprop:Generator_UserColumnName="solicitacao" type="xs:string" minOccurs="0" />
+              <xs:element name="idRequisito" msprop:Generator_ColumnVarNameInTable="columnidRequisito" msprop:Generator_ColumnPropNameInRow="idRequisito" msprop:Generator_ColumnPropNameInTable="idRequisitoColumn" msprop:Generator_UserColumnName="idRequisito" type="xs:string" minOccurs="0" />
+              <xs:element name="versaoLiberacao" msprop:Generator_ColumnVarNameInTable="columnversaoLiberacao" msprop:Generator_ColumnPropNameInRow="versaoLiberacao" msprop:Generator_ColumnPropNameInTable="versaoLiberacaoColumn" msprop:Generator_UserColumnName="versaoLiberacao" type="xs:string" minOccurs="0" />
+              <xs:element name="desenvolvedor" msprop:Generator_ColumnVarNameInTable="columndesenvolvedor" msprop:Generator_ColumnPropNameInRow="desenvolvedor" msprop:Generator_ColumnPropNameInTable="desenvolvedorColumn" msprop:Generator_UserColumnName="desenvolvedor" type="xs:string" minOccurs="0" />
+              <xs:element name="tempoReal" msprop:Generator_ColumnVarNameInTable="columntempoReal" msprop:Generator_ColumnPropNameInRow="tempoReal" msprop:Generator_ColumnPropNameInTable="tempoRealColumn" msprop:Generator_UserColumnName="tempoReal" type="xs:int" minOccurs="0" />
+              <xs:element name="horas" msprop:Generator_ColumnVarNameInTable="columnhoras" msprop:Generator_ColumnPropNameInRow="horas" msprop:Generator_ColumnPropNameInTable="horasColumn" msprop:Generator_UserColumnName="horas" type="xs:string" minOccurs="0" />
+              <xs:element name="idSolicitacao" msprop:Generator_ColumnVarNameInTable="columnidSolicitacao" msprop:Generator_ColumnPropNameInRow="idSolicitacao" msprop:Generator_ColumnPropNameInTable="idSolicitacaoColumn" msprop:Generator_UserColumnName="idSolicitacao" type="xs:int" minOccurs="0" />
+              <xs:element name="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn" msprop:Generator_UserColumnName="status" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="VisaoDadosSolicitacao_VisaoDadosSolicitacaoDesenvolvedores" msdata:parent="VisaoDadosSolicitacao" msdata:child="VisaoDadosSolicitacaoDesenvolvedores" msdata:parentkey="idSolicitacao" msdata:childkey="idSolicitacao" msprop:Generator_UserChildTable="VisaoDadosSolicitacaoDesenvolvedores" msprop:Generator_ChildPropName="GetVisaoDadosSolicitacaoDesenvolvedoresRows" msprop:Generator_UserRelationName="VisaoDadosSolicitacao_VisaoDadosSolicitacaoDesenvolvedores" msprop:Generator_RelationVarName="relationVisaoDadosSolicitacao_VisaoDadosSolicitacaoDesenvolvedores" msprop:Generator_UserParentTable="VisaoDadosSolicitacao" msprop:Generator_ParentPropName="VisaoDadosSolicitacaoRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
